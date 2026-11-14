@@ -1,0 +1,1 @@
+"""AgriShift AI application package."""
