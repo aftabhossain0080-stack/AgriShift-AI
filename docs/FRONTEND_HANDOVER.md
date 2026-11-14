@@ -6,7 +6,7 @@
 ### Welcome to AgriShift AI!
 This handover guide has been prepared specifically for you as the frontend developer taking over the client-side implementation of **AgriShift AI**.
 
-The backend is **100% complete, fully tested (77/77 passing automated tests), and currently operational**. It handles all external NASA satellite ingestion, data cleaning, sentinel handling (`-999.0`), double-counting prevention, agricultural indicator calculations, and institutional crop recommendation scoring.
+The backend is **100% complete, fully tested (92/92 passing automated tests), and currently operational**. It handles all external NASA satellite ingestion, data cleaning, sentinel handling (`-999.0`), double-counting prevention, agricultural indicator calculations, and institutional crop recommendation scoring.
 
 **Your mission:** Build a modern, intuitive, responsive, and trustworthy frontend interface that transforms these backend API responses into clear visual decision support for farmers and agricultural advisors in Hooghly, West Bengal.
 

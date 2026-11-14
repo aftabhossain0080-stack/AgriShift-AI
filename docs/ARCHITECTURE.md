@@ -71,24 +71,31 @@ Agrishhift AI/
 ├── data/                                   # Local Data Storage
 │   └── .gitkeep                            # Placeholder for temporary downloads or cache
 │
-├── docs/                                   # Project Documentation Suite
-│   ├── PRD.md                              # Product Requirements Document
+├── docs/                                   # Complete Technical Documentation Suite
+│   ├── README.md                           # Documentation directory index & system overview
+│   ├── API_DOCUMENTATION.md                # Comprehensive Frontend API reference & contracts
+│   ├── BACKEND_SETUP.md                    # Windows developer setup & execution manual
+│   ├── DATA_PIPELINE.md                    # Phase 5 data cleaning, integration & indicator formulas
+│   ├── CROP_RULES_REFERENCE.md             # 8-crop knowledge base, 100-pt scoring & ICAR sources
+│   ├── AGRONOMIC_VALIDATION.md             # Scientific validation, ICAR/BCKV rules & limits
+│   ├── FINAL_BACKEND_AUDIT.md              # Final implementation audit scorecard & evidence
 │   ├── ARCHITECTURE.md                     # Complete Technical Architecture (This Document)
 │   ├── API_REFERENCE.md                    # Detailed API Endpoints & cURL Reference
-│   └── FRONTEND_HANDOVER.md                # Frontend Developer Handover & UI Specifications
+│   ├── FRONTEND_HANDOVER.md                # Frontend Developer Handover & UI Specifications
+│   └── PRD.md                              # Product Requirements Document
 │
-├── tests/                                  # Automated Pytest Verification Suite (77 Tests)
+├── tests/                                  # Automated Pytest Verification Suite (92 Tests)
 │   ├── __init__.py                         # Test package marker
 │   ├── test_health.py                      # Health check & root endpoint tests (2 tests)
 │   ├── test_farmer_schema.py               # Farmer input validation & edge-case tests (13 tests)
 │   ├── test_nasa_power.py                  # NASA POWER API client & summary tests (17 tests)
 │   ├── test_nasa_smap.py                   # NASA SMAP soil moisture tests (9 tests)
-│   ├── test_nasa_gpm.py                    # NASA GPM CMR search & trend tests (8 tests)
+│   ├── test_nasa_gpm.py                    # NASA GPM CMR, auth & fallback tests (16 tests)
 │   ├── test_data_processor.py              # Phase 5 data cleaning & integration tests (15 tests)
-│   └── test_recommendation_engine.py       # Phase 6 crop recommendation & scoring tests (13 tests)
+│   └── test_recommendation_engine.py       # Phase 6 recommendation & agronomic tests (20 tests)
 │
 ├── .env                                    # Local environment secrets (Git-ignored)
-├── .env.example                            # Safe template for environment configuration
+├── .env.example                            # Safe template with placeholders only
 ├── .gitignore                              # Git exclusion rules (Secrets, cache, virtualenvs)
 ├── requirements.txt                        # Production package dependencies
 └── README.md                               # Project overview and quickstart instructions
@@ -597,7 +604,7 @@ graph TD
 
 The architecture detailed in this document has been verified against the physical repository:
 
-* **Active Automated Test Suite:** `77 passed, 0 failed` across unit and integration tests.
+* **Active Automated Test Suite:** `92 passed, 0 failed` across unit and integration tests (100% pass rate).
 * **Security Redaction:** Zero occurrences of Earthdata passwords, private tokens, or secret keys in any source code, test mock, or documentation file.
 * **Decoupling Status:** Completely decoupled; backend runs as an autonomous REST API on `http://127.0.0.1:8000`.
 * **OpenAPI Compliance:** 100% compliant; interactive Swagger documentation actively served at `/docs` and `/openapi.json`.

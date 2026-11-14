@@ -20,30 +20,38 @@ agrishift-ai/
 │   ├── api/                        # API route controllers
 │   │   ├── nasa.py                 # NASA Earth Observation endpoints
 │   │   ├── farmer.py               # Farmer input intake endpoints
-│   │   └── recommendations.py      # Recommendation endpoints
+│   │   ├── agriculture.py          # Phase 5 processing endpoints
+│   │   └── recommendations.py      # Phase 6 recommendation endpoints
 │   │
 │   ├── services/                   # Business logic and external connectors
 │   │   ├── nasa_power.py           # NASA POWER API client
-│   │   ├── nasa_gpm.py             # NASA GPM IMERG client
-│   │   ├── nasa_smap.py            # NASA SMAP client
-│   │   ├── data_processor.py       # Pandas/NumPy analytics pipeline
-│   │   └── recommendation_engine.py# Transparent agronomic recommendation rules
+│   │   ├── nasa_gpm.py             # NASA GPM IMERG client & fallback
+│   │   ├── nasa_smap.py            # NASA SMAP soil moisture client
+│   │   ├── data_cleaner.py         # Sentinel (-999) sanitization
+│   │   ├── data_integrator.py      # Date alignment & rainfall harmonization
+│   │   ├── indicator_calculator.py # Agricultural indicator formulas
+│   │   ├── data_processor.py       # Phase 5 pipeline orchestrator
+│   │   ├── crop_knowledge_base.py  # 8-crop ICAR/BCKV agronomic knowledge base
+│   │   └── recommendation_engine.py# 100-point transparent scoring engine
 │   │
-│   ├── schemas/                    # Pydantic data schemas
+│   ├── schemas/                    # Pydantic v2 data schemas
 │   │   ├── farmer.py               # Input models for farmer and land data
-│   │   └── recommendation.py       # Output models for advisory responses
+│   │   ├── nasa.py                 # Earth Observation schemas
+│   │   ├── agriculture.py          # Processing pipeline schemas
+│   │   └── recommendation.py       # Advisory output schemas
 │   │
 │   ├── utils/                      # Utilities & configuration
 │   │   └── config.py               # App configuration & .env loader
 │   │
 │   └── __init__.py
 │
+├── docs/                           # Comprehensive Documentation Suite (See docs/README.md)
 ├── data/                           # Local cache and raw satellite payloads
-├── tests/                          # Automated unit and integration tests
-├── .env.example                    # Environment variable template
+├── tests/                          # Automated Pytest suite (92 tests, 100% pass)
+├── .env.example                    # Environment variable template with placeholders
 ├── .gitignore                      # Git ignore configuration
 ├── requirements.txt                # Python package dependencies
-└── README.md                       # Project documentation
+└── README.md                       # Project overview and quickstart instructions
 ```
 
 ---

@@ -37,7 +37,28 @@ The backend is configured with permissive development CORS (`allow_origins=["*"]
 
 ## 2. API Endpoints Reference
 
-### 2.1 Health Check & System Status
+### 2.1 System & Health Endpoints
+
+#### `GET /`
+Returns service root information, active version, project overview, and documentation URLs.
+
+* **Method:** `GET`
+* **Query Parameters:** None
+* **Sample Response (200 OK):**
+```json
+{
+  "project": "AgriShift AI",
+  "status": "online",
+  "version": "1.0.0",
+  "description": "Smart Agriculture Recommendation Backend powered by NASA Earth Observations",
+  "target_region": "Hooghly, West Bengal, India",
+  "documentation": {
+    "swagger": "/docs",
+    "redoc": "/redoc",
+    "openapi": "/openapi.json"
+  }
+}
+```
 
 #### `GET /health`
 Verifies backend operational status, active environment, and default pilot coordinates.
@@ -431,6 +452,32 @@ Generates top 3 ranked, explainable crop recommendations for the intended upcomi
     }
   ],
   "disclaimer": "AgriShift AI provides advisory recommendations based on NASA satellite observations and ICAR/BCKV agronomic research. It does NOT guarantee crop yield, market price, or financial profit."
+}
+```
+
+---
+
+### 2.8 Recommendation Engine Status
+
+#### `GET /api/v1/recommendations/status`
+Returns the operational status, phase number, and supported crop count for the recommendation engine.
+
+* **Method:** `GET`
+* **Query Parameters:** None
+* **Sample Response (200 OK):**
+```json
+{
+  "status": "operational",
+  "phase": "Phase 6: Intelligent Crop Recommendation Engine",
+  "supported_crops_count": 8,
+  "supported_regions": [
+    "Hooghly, West Bengal, India"
+  ],
+  "advisory_institutions": [
+    "ICAR",
+    "BCKV",
+    "West Bengal Department of Agriculture"
+  ]
 }
 ```
 
