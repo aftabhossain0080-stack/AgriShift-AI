@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Source+Sans+3:wght@200..900&family=Noto+Sans+Bengali:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-deep-green: #1E4D36;
+  --color-soil-brown: #6B4A2F;
+  --color-wheat: #D9B26A;
+  --color-ink: #1B1F1C;
+  --color-alert-red: #B3261E;
+  --color-off-white: #F6F3EC;
+  --color-border: #D8D2C4;
+}
+
+body {
+  background-color: #F6F3EC;
+  font-family: "Source Sans 3", sans-serif;
+  color: #1B1F1C;
+  text-align: start;
+}
+
+/* CSS Logical properties support for RTL directions */
+[dir="rtl"] {
+  text-align: right;
+}
+

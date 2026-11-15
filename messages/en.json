@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Home",
+    "advice": "Get Advice",
+    "about": "About",
+    "primaryCta": "Get Advice",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "demo": "Demo"
+  },
+  "hero": {
+    "eyebrow": "NASA Earth observation for farmers worldwide",
+    "headline": "Crop decisions backed by <wheat>satellite data</wheat>, anywhere on Earth",
+    "subheadline": "Enter any location. AgriShift AI reads NASA satellite data on rainfall, temperature and soil moisture, then ranks crops with a score you can inspect.",
+    "cta": "Get crop advice"
+  },
+  "problem": {
+    "title": "What smallholders face",
+    "body1": "Smallholder farmers on plots between 1 and 3 acres face a common problem: choosing the right crop for the season relies on guesswork because local weather data is scarce or absent.",
+    "body2": "Unpredictable rainfall and sudden temperature shifts can damage sensitive crops. AgriShift AI delivers satellite observations directly so your planting decisions rest on measured facts, not forecasts."
+  },
+  "dataSection": {
+    "title": "Satellite observations we read",
+    "subtitle": "Direct feeds from NASA Earth observation satellites, calibrated for your location",
+    "power": {
+      "title": "NASA POWER",
+      "desc": "Supplies daily air temperature, solar radiation, and relative humidity for your coordinates."
+    },
+    "gpm": {
+      "title": "NASA GPM IMERG",
+      "desc": "Measures precipitation accumulation and tracks dry spells across 10-day observation windows."
+    },
+    "smap": {
+      "title": "NASA SMAP Level-4",
+      "desc": "Calculates topsoil and root-zone soil moisture percentiles to determine irrigation need."
+    }
+  },
+  "methodSection": {
+    "title": "How the advisory works",
+    "subtitle": "Four steps from field assessment to your farm plan",
+    "step1": {
+      "num": "1",
+      "title": "Enter field details",
+      "desc": "Provide village location, plot size in acres, soil classification, and previous harvested crop."
+    },
+    "step2": {
+      "num": "2",
+      "title": "Read satellite telemetry",
+      "desc": "The system pulls current NASA POWER, GPM IMERG, and SMAP soil wetness measurements."
+    },
+    "step3": {
+      "num": "3",
+      "title": "Score eight crops out of 100",
+      "desc": "The transparent engine scores each crop on thermal window, water budget, soil fit, and rotation synergy."
+    },
+    "step4": {
+      "num": "4",
+      "title": "Receive your farm plan",
+      "desc": "Get a 4-week irrigation water schedule, rotation synergy advice, and active weather risk alerts."
+    },
+    "machineryCaption": "Cooperative straw choppers and custom hiring centres help manage post-harvest paddy residue without field burning."
+  },
+  "advice": {
+    "pageTitle": "Farmer Intake and Advisory",
+    "pageSubtitle": "Complete the 4-step farm assessment to generate your personalized crop recommendation and water plan.",
+    "stepIndicator": "Step {current} of {total}",
+    "step1Title": "Location Coordinates",
+    "step1Desc": "Search for a location or enter coordinates.",
+    "step2Title": "Soil and Land Characteristics",
+    "step2Desc": "Provide soil texture, land area, and irrigation access.",
+    "step3Title": "Cropping History and Season",
+    "step3Desc": "Enter standing crop, previously harvested crop, and target season.",
+    "step4Title": "Review and Generate Plan",
+    "step4Desc": "Verify your field details before requesting satellite analysis.",
+    "presetsLabel": "One-click village presets:",
+    "village": "Village name",
+    "latitude": "Latitude (-90 to 90)",
+    "longitude": "Longitude (-180 to 180)",
+    "soilType": "Dominant soil type",
+    "landArea": "Land area in acres",
+    "irrigation": "Assured irrigation available (borewell, canal, lift)",
+    "currentCrop": "Current standing crop",
+    "previousCrop": "Previous harvested crop",
+    "farmingSeason": "Target farming season",
+    "btnNext": "Continue to next step",
+    "btnPrev": "Back to previous step",
+    "btnSubmit": "Generate recommendation plan",
+    "loading": "Contacting NASA Earth observation feeds...",
+    "reviewTitle": "Summary of field parameters",
+    "savedNotice": "Progress saved in your browser session."
+  },
+  "results": {
+    "pageTitle": "Crop Recommendations and Advisory Plan",
+    "pageSubtitle": "Based on NASA POWER, GPM IMERG, and SMAP observations for your field location.",
+    "rankedTitle": "Ranked Crop Candidates",
+    "rankedSubtitle": "Eight crops scored from 0 to 100 using ICAR and BCKV agronomic criteria.",
+    "breakdownTitle": "Transparent 100-Point Score Breakdown",
+    "breakdownSubtitle": "Auditable point allocation for {crop}",
+    "tableFactor": "Agronomic Factor",
+    "tableWeight": "Weight",
+    "tableScore": "Score",
+    "tableNotes": "Satellite Basis",
+    "irrigationTitle": "4-Week Irrigation Delivery Schedule",
+    "irrigationSubtitle": "Weekly water depth in millimetres based on SMAP root-zone moisture.",
+    "chartView": "Chart view",
+    "tableView": "Data table alternative",
+    "tableWeek": "Week",
+    "tableStage": "Growth Stage",
+    "tableWater": "Water Need (mm)",
+    "tableGuidance": "Field Guidance",
+    "rotationTitle": "Crop Rotation and Soil Fertility Plan",
+    "risksTitle": "Active Climate Risk Alerts",
+    "detailLink": "View full crop agronomic profile",
+    "newAssessment": "Start new assessment"
+  },
+  "cropDetail": {
+    "pageTitle": "Crop Agronomic Profile",
+    "overview": "Agronomic Overview",
+    "botanical": "Botanical Name",
+    "family": "Plant Family",
+    "season": "Optimal Seasons",
+    "soil": "Favorable Soil Types",
+    "water": "Water Requirement",
+    "duration": "Duration in Days",
+    "soilImpact": "Soil Organic Matter and Nutrient Dynamics",
+    "pests": "Common Diseases and Pest Management",
+    "practices": "Package of Practices and Sowing Guidelines",
+    "sources": "Agricultural Research References",
+    "backToResults": "Back to recommendations"
+  },
+  "features": {
+    "title": "What the tool does",
+    "items": [
+      {
+        "title": "Crop ranking",
+        "body": "Eight crops scored 0 to 100 on temperature fit, soil moisture, rainfall, and rotation history."
+      },
+      {
+        "title": "Irrigation plan",
+        "body": "Weekly water need in millimetres derived from live SMAP soil moisture and local evapo-transpiration."
+      },
+      {
+        "title": "Rotation advice",
+        "body": "Flags nitrogen-depleting patterns and suggests legume breaks to protect next season."
+      },
+      {
+        "title": "Risk alerts",
+        "body": "Dry-spell warnings and temperature-stress flags based on GPM IMERG and NASA POWER readings."
+      }
+    ]
+  },
+  "harvest": {
+    "title": "Crop rotation and harvest management",
+    "subtitle": "Balancing mechanisation and soil conservation for smallholder farms",
+    "mechanisationTitle": "Mechanisation on smallholder plots",
+    "mechanisationBody": "Large-scale mechanised harvesters are rare among 1 to 3 acre smallholders, where custom hiring centres and cooperative equipment are emerging for post-harvest residue management.",
+    "rotationTitle": "Protecting soil between seasons",
+    "rotationBody": "Intensive potato and paddy cycles deplete soil nitrogen and micronutrients. Introducing short-duration legume breaks such as lentil or green gram restores organic carbon and reduces chemical fertiliser dependence.",
+    "stubbleTitle": "Residue retention without burning",
+    "stubbleBody": "Managing paddy straw through shredding and in-situ mulching protects soil moisture for subsequent Rabi sowing while eliminating open field burning."
+  },
+  "demo": {
+    "title": "Interactive Recommendation Demo",
+    "village": "Village name",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "currentCrop": "Current crop",
+    "previousCrop": "Previous crop",
+    "soilType": "Soil type",
+    "landArea": "Land area (acres)",
+    "irrigation": "Irrigation available",
+    "season": "Farming season",
+    "submit": "Get recommendation",
+    "loading": "Fetching satellite data",
+    "errorTitle": "Could not fetch recommendation",
+    "retry": "Try again",
+    "scoreLabel": "Score",
+    "topCrop": "Recommended crop",
+    "rankLabel": "Rank"
+  },
+  "crops": {
+    "mustard": "Mustard",
+    "lentil": "Lentil",
+    "maize": "Maize",
+    "paddyAman": "Paddy (Aman)",
+    "paddyBoro": "Paddy (Boro)",
+    "potato": "Potato",
+    "jute": "Jute",
+    "wheat": "Wheat"
+  },
+  "seasons": {
+    "rabi": "Rabi",
+    "kharif": "Kharif",
+    "zaid": "Zaid"
+  },
+  "soilTypes": {
+    "alluvial": "Alluvial",
+    "clay": "Clay",
+    "sandy": "Sandy",
+    "loamy": "Loamy"
+  },
+  "footer": {
+    "tagline": "Satellite data for every farmer.",
+    "context": "Satellite intelligence for smallholder farmers worldwide.",
+    "links": "Navigation",
+    "legal": "Legal",
+    "notice": "Powered by NASA POWER, GPM IMERG, and SMAP Earth Observation data. Developed for smallholders.",
+    "disclaimer": "AgriShift AI provides advisory recommendations based on public satellite observations. Field conditions may vary.",
+    "copyright": "Non-commercial agricultural advisory service."
+  },
+  "terms": {
+    "title": "Terms of Service"
+  },
+  "privacy": {
+    "title": "Privacy Policy"
+  },
+  "errors": {
+    "network": "Could not connect to the recommendation service. Please check your connection and try again.",
+    "validation": "Please correct the highlighted fields.",
+    "timeout": "The request timed out. Try again on a better connection.",
+    "noProfile": "No farmer profile found. Please start a new farm assessment."
+  },
+  "about": {
+    "title": "About AgriShift AI",
+    "subtitle": "Satellite intelligence built for farmers who need it most",
+    "missionTitle": "Our mission",
+    "missionBody": "AgriShift AI was built to put NASA satellite data in the hands of smallholder farmers everywhere. Precise crop advice should not require an agronomist visit.",
+    "whereTitle": "Where we started",
+    "whereBody": "The project began in Hooghly, West Bengal, where farmers on 1 to 3 acre plots in villages like Singur needed seasonal crop guidance backed by data, not guesswork.",
+    "accuracyTitle": "How accurate is this?",
+    "accuracyBody": "AgriShift AI reads live satellite measurements, not forecasts. The 100-point score reflects current soil moisture, recent rainfall, and thermal conditions at your coordinates. It does not predict yield or profit. Field conditions, seed variety, and pest pressure always matter. Use it as a starting point, then consult your local extension officer.",
+    "dataTitle": "Data sources",
+    "dataBody": "NASA POWER (temperature, solar radiation, humidity), NASA GPM IMERG (precipitation), NASA SMAP Level-4 (soil moisture). All data is public domain."
+  }
+}
